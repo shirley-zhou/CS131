@@ -1,0 +1,87 @@
+Problem 1: This problem was pretty straightforward. Our TA walked us through the
+basic idea in discussion. The only tricky part was understanding how Ocaml can
+return functions.
+
+Problem 2:
+
+At first, it was difficult to understand what the problem was asking. Once I
+figured it out, I understood the general idea was to expand each rule until it
+reached terminal symbols, and try to match with the actual terminals in the frag
+string. However, I still didn't know how to start, until I realized that of
+course every parse tree has to start with the starting symbol. So I had to add
+an arg which was the starting symbol into the matcher function. With both the
+start symbol and the rules, the matcher could then start generating the subrules
+for each symbol using (rules start) and recurse from there.
+
+Initially, I tried to fit everything into the matcher function, as I thought the
+spec required. But then I realized that the matcher needed to recurse twice: For
+each symbol it tried to expand, there were multiple possible rules, which would
+be returned by (rules symbol). I added a try_derive function to recursively
+check each subrule associated with a symbol. But for each subrule, the program
+had to also iterate over each symbol and find a match with the corresponding
+element in the frag list. So I made a function called expand_rule to go over a
+single rule and check all its symbols. If a symbol is terminal and matches the
+corresponding symbol in frag, then everything is okay and we can move on to
+check the next symbol in the rule. A tricky part was if the symbol is not
+terminal, because we actually need to recurse back to the parent try_derive
+function but with this new symbol, so that it can try to expand this symbol
+further. BUT the accept function passed back in must actually be different. For
+an expansion to be successful, now it is also necessary that the rest of the
+symbols in that rule be expandable as well, making the new accept function
+(expand_rule all_rules rest accept). Once the rule is completely parsed,
+anything remaining in the frag argument will be whatever suffix is left over.
+The suffix gets passed into accept for checking. Then, expand_rule returns its
+results to try_derive. If the rule was okay and result was not None, try_derive
+will append the rule to the derivation list. Else, try_derive should not return
+immediately, but will move on and try the next rule for that symbol, as required
+by the spec.
+
+Also, I had to figure out how to return functions in ocaml. At first, I did it
+wrong because I overspecified the number of arguments passed in when calling the
+matcher. As a result, parse_prefix would return actual values rather than
+returning matcher.
+
+I did find a weakness in this parser, which is that the order of the rules does
+matter, since it checks only from left to right. I started realizing this from
+test 2.
+
+For test2: let test_2 = ((parse_prefix awkish_grammar accept_empty_suffix ["$";
+"5"; "+"; "3"; "-"; "2"])    = Some ([(Expr, [N Term; N Binop; N Expr]); (Term,
+[N Lvalue]); (Lvalue, [T "$"; N Expr]); (Expr, [N Term; N Binop; N Expr]);
+(Term, [N Num]); (Num, [T "5"]); (Binop, [T "+"]); (Expr, [N Term]);    (Term,
+[N Num]); (Num, [T "3"]); (Binop, [T "-"]); (Expr, [N Term]);    (Term, [N
+Num]); (Num, [T "2"])],   []))
+
+Because the parser simply tries rules from left to right, it returns a parse
+tree that can be interpreted as ($5+3)-2 rather than the intended $5+3-2. This
+happens because the parser simply tries rules from left to right, so it replace
+Lvalue with $ Expr, then replaces this Expr with Term Binop Expr rather than the
+second alternative, which is just Term. This actually still returns a valid
+parse rather than None because the 3-2 at the end will fill up the top level of
+the tree, leaving no hanging suffix. So this parse is accepted. This happens due
+to the nature of this parser, which simply tries rules in order, making it stick
+to the first rule that is valid for Expr. Perhaps this grammar is
+underspecified, resulting in this ambiguity. But another fix would be for the
+parser to return the shallowest tree rather than just settle on the first rule
+that works, for each symbol. The parser is still technically correct based on
+the spec. However, it hints at the main weakness, which is that RULE ORDER
+MATTERS to this parser.***********
+
+A test case that would completely fail would simply be to switch the first rule
+for Expr from:
+
+Expr -> [[N Term; N Binop; N Expr]; [N Term]]
+
+to
+
+Expr -> [[N Expr; N Binop; N Term]; [N Term]]
+
+In test3:
+Now, an expression like $5+3 will fail to be parsed, even though it is actually
+still valid based on the grammar. The parser simply recurses forever, because
+for an Expr, it tries to use the first rule [N Expr; N Binop; N Term], which
+starts with Expr, even though simply looking at the second rule [N Term] would
+fix the problem and end the recursion.
+
+In conclusion, the problem with this simple parser is that rule order matters.
+It can only go left to right, which in some cases may be a problem.

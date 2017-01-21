@@ -1,0 +1,14 @@
+There should be no deficiencies.
+
+I followed the spec on all functions to the best of my understanding,
+despite some ambiguity in interpretation of the spec.
+For many of the functions, I interpreted the prefix portion of the listdiff as the key portion to preserve.
+Sometimes, suffixes are not preserved. For example, in the append-ld function, the spec only requires appending
+the actual elements represented by the listdiff, ie the prefix. So the new listdiff that it outputs does
+append all the prefixes of the input listdiffs as required, but the suffixes are not preserved. It simply outputs a new listdiff with the correctly appended prefix values but an arbitrary suffix for simplicity.
+Same for other functions, where piazza indicated that suffixes were unimportant.
+
+Also, expr-returning is implemented with a macro, because a normal function would not be able to retrieve the
+name of the listdiff variable passed in. Being able to replace the "listdiff" with a list name such as d1 etc.
+was key in implementing expr-returning given the constraints. The spec did not forbid macros, so I assume this
+the correct way to implement, and it was the only way I could think of to get around the spec constraints. Macros are good for substituting portions of code.

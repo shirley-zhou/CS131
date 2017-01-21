@@ -1,0 +1,180 @@
+connection made
+received: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+update/add client info
+connect with neighbor: Alford
+propagate: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+connect with neighbor: Ball
+propagate: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+connection made
+received: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+do not update client info
+connection made
+received: WHATSAT kiwi.cs.ucla.edu 10 5
+querying Places API: https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=+34.068930,-118.445127&radius=10&key=AIzaSyAPcvoE1SSFXtdxtHT1SsT7samqq6TCmWE
+returned json: {
+   "html_attributions" : [],
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.0522342,
+               "lng" : -118.2436849
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.3373061,
+                  "lng" : -118.1552891
+               },
+               "southwest" : {
+                  "lat" : 33.7036917,
+                  "lng" : -118.6681759
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "7f7b7d8118ae8db8ed3f541159ac928c484d12ad",
+         "name" : "Los Angeles",
+         "photos" : [
+            {
+               "height" : 1836,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/110754648019535581166/photos\"\u003eirvin leon\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAEAaNvIfZIqKpqeWAWmv29Nt7qh-tlu3QcDvBsTxHqA0--tFotH1fHmUt4pQUukbsNwsbioy3b_PXpLdke1etQVChRFXu8fVUcMz36QlakLSnqPs19ew6Mo_O6HuTczeMV4D3y-T2AcfuBLQjI6w4XQjsLAE4RhS1O8sWKFLgr1OEhD-FJVZf_buPv-VrJt_loynGhRVkG26ATeOl2CQCDAyK020QvzpgQ",
+               "width" : 3264
+            }
+         ],
+         "place_id" : "ChIJE9on3F3HwoAR9AhGJW_fL-I",
+         "reference" : "CmRbAAAAUIlIYpEFXqD-1dTQ-M4BwpRYsRUrWLQsXJOTyJhWBFa1QJK4lDh9S0AOl7MC48q7jmRU2Ypr6t8lXZ6mpLXHwCteYTT3fHyI3QmKjhjEVdrj4CAgkjoIc5-V2cY8KgMeEhAYjYb-ceFznPMisjzK54mrGhRcldH5XcNn3zdSPSMJgEAnEsv0tw",
+         "scope" : "GOOGLE",
+         "types" : [ "locality", "political" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.068921,
+               "lng" : -118.4451811
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.08632165,
+                  "lng" : -118.4298687
+               },
+               "southwest" : {
+                  "lat" : 34.05637465,
+                  "lng" : -118.4632287
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "4d56f16ad3d8976d49143fa4fdfffbc0a7ce8e39",
+         "name" : "University of California, Los Angeles",
+         "photos" : [
+            {
+               "height" : 2304,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/116579609121253458406/photos\"\u003eGeorge Germanos\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAIkG_AoFAd2pMTVVVG-p-33_q-CwsOYwY7lCsXXS1Q6nDm96_-sZFF6Bcdht09oYtUl-n6ks9_B9HyiHUoWxnHmDqWPrm9IHSTF46lWSN0DMVIPUbB8uHo1KETej4fl-GPCAAxyqKDF4860ZZ4-F401TXbqmSQi8Zd_4Et-zQ1t9EhDpw-Ks1lj4a5_Yfb7KeuzoGhTZCIP0UMhI9Wa1Y_-YC4j0pD-ZNQ",
+               "width" : 3072
+            }
+         ],
+         "place_id" : "ChIJZQ9c8IW8woARN0gTXFiTqSU",
+         "rating" : 4.5,
+         "reference" : "CmRRAAAASSKbIHjSHfel2zMU7CZ5fT7-Fhejmix3YbTz6-EHb8xgxXWco7W6PO15GmX3mfyb10Wtfliwgp6UXjwmZMLszZG9e6A5EGtKES1snYHewOu5nLrHWo2fk47jXUAsdwuNEhClspAoedNKsbV4pG6TW2cwGhSqz1xALSfV8da3olieRLEW0a88IQ",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.068921,
+               "lng" : -118.4451811
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.06902119999999,
+                  "lng" : -118.4449249
+               },
+               "southwest" : {
+                  "lat" : 34.0688876,
+                  "lng" : -118.4452665
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+         "id" : "34aa535beb4a1b85c1deccb5d4324d2ae52d256e",
+         "name" : "University of California, Los Angeles",
+         "place_id" : "ChIJi2-gEH67woARErSL-8SY8zY",
+         "reference" : "CmRRAAAAd53q6NIvKlJ9TlIlMbFVgaJbQuwp3qhx8Al1tZ_Q_Vdyp1FCo1ST6VJAD_3q20k3kWbID41aGfoj54AQJAxNDopt0KP4MycCXnbz6RmXf4qQAr47yQX8iPqdOqeLqdkuEhCbKsJWikOuknKw1bMk1cW3GhSGetJb3onIRHR9HircoPmzZpnVlA",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "point_of_interest", "establishment" ],
+         "vicinity" : "Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.068921,
+               "lng" : -118.4451811
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "a392fa0dad510c05b5d5a82616b17a59ca91ff45",
+         "name" : "Amazon Locker - Covel",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "place_id" : "ChIJ5Yvbq4i8woAR_hzXVkDyk74",
+         "reference" : "CmRSAAAAEedMKzuz66K6qJ_vozFnFWLfhrAYKaY-pjj79n4ItaBogJ4pT3yKOE5C_2ARb-NJQx2LXzLCIZ1AXTazAkwGiI9MEe5fFUa7JOmDX9-NsnKWENjodeqXgj4Tl28j2zfMEhAW8Xm2hqpVrV0yMJ89Jb6OGhQLgJZGcmZ_4c5tyS77SqnyjYt7Bw",
+         "scope" : "GOOGLE",
+         "types" : [ "point_of_interest", "establishment" ],
+         "vicinity" : "200 De Neve Dr, at UCLA Covel Commons, Los Angeles"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 34.0635016,
+               "lng" : -118.4455164
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.0827807,
+                  "lng" : -118.4141518
+               },
+               "southwest" : {
+                  "lat" : 34.0470589,
+                  "lng" : -118.4665319
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "87ef87c6cb98059f72b40a917e6e9c8c80e5d8b3",
+         "name" : "Westwood",
+         "photos" : [
+            {
+               "height" : 3024,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/112416170407648723941/photos\"\u003eYingju Ma\u003c/a\u003e"
+               ],
+               "photo_reference" : "CoQBdwAAAPho1g9ljV3H1cmOAfdOW5Nm-qoYb1EIplFo5dMB0rPseF0DtG6aOTYK7QZFc3HweA3njGx_VdtzxCGm4c_CDRkK39HlT8citjfOQeE_qQA5pz1yXC6AFLQXd6iZBO4IyqsgMeAd4mZv0cUYFJvRs-wb_zM0I7aM89MV-bfxl9d8EhC0Z95b8K6byuwckHodmXy7GhQbvIYVvHvuKyZtQie5FI9OuP2RcQ",
+               "width" : 4032
+            }
+         ],
+         "place_id" : "ChIJecf92oa8woARVlNT9X_x42M",
+         "reference" : "CmRbAAAAKEj2nuE-YzOAXCSwrATXuwRIbccOQ7J4UmUDElSiSS8LFtJyUNP0dkZWncCMu4Tr6eWuRJfH14-xNLL9ieKvuFaMwuOlxVa29rpmy77vTIDHPOmPre_ViEV-kyHZM35cEhATryVSkXT7PK8V4fCJhNmQGhT63NELWQf0zdpfPa1jWEgi6gC_cg",
+         "scope" : "GOOGLE",
+         "types" : [ "neighborhood", "political" ],
+         "vicinity" : "Los Angeles"
+      }
+   ],
+   "status" : "OK"
+}
+
+response to client: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+{"status": "OK", "html_attributions": [], "results": [{"name": "Los Angeles", "reference": "CmRbAAAAUIlIYpEFXqD-1dTQ-M4BwpRYsRUrWLQsXJOTyJhWBFa1QJK4lDh9S0AOl7MC48q7jmRU2Ypr6t8lXZ6mpLXHwCteYTT3fHyI3QmKjhjEVdrj4CAgkjoIc5-V2cY8KgMeEhAYjYb-ceFznPMisjzK54mrGhRcldH5XcNn3zdSPSMJgEAnEsv0tw", "geometry": {"location": {"lat": 34.0522342, "lng": -118.2436849}, "viewport": {"northeast": {"lat": 34.3373061, "lng": -118.1552891}, "southwest": {"lat": 33.7036917, "lng": -118.6681759}}}, "place_id": "ChIJE9on3F3HwoAR9AhGJW_fL-I", "vicinity": "Los Angeles", "photos": [{"photo_reference": "CoQBdwAAAEAaNvIfZIqKpqeWAWmv29Nt7qh-tlu3QcDvBsTxHqA0--tFotH1fHmUt4pQUukbsNwsbioy3b_PXpLdke1etQVChRFXu8fVUcMz36QlakLSnqPs19ew6Mo_O6HuTczeMV4D3y-T2AcfuBLQjI6w4XQjsLAE4RhS1O8sWKFLgr1OEhD-FJVZf_buPv-VrJt_loynGhRVkG26ATeOl2CQCDAyK020QvzpgQ", "width": 3264, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/110754648019535581166/photos\">irvin leon</a>"], "height": 1836}], "scope": "GOOGLE", "id": "7f7b7d8118ae8db8ed3f541159ac928c484d12ad", "types": ["locality", "political"], "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png"}, {"rating": 4.5, "name": "University of California, Los Angeles", "reference": "CmRRAAAASSKbIHjSHfel2zMU7CZ5fT7-Fhejmix3YbTz6-EHb8xgxXWco7W6PO15GmX3mfyb10Wtfliwgp6UXjwmZMLszZG9e6A5EGtKES1snYHewOu5nLrHWo2fk47jXUAsdwuNEhClspAoedNKsbV4pG6TW2cwGhSqz1xALSfV8da3olieRLEW0a88IQ", "geometry": {"location": {"lat": 34.068921, "lng": -118.4451811}, "viewport": {"northeast": {"lat": 34.08632165, "lng": -118.4298687}, "southwest": {"lat": 34.05637465, "lng": -118.4632287}}}, "place_id": "ChIJZQ9c8IW8woARN0gTXFiTqSU", "vicinity": "Los Angeles", "photos": [{"photo_reference": "CoQBdwAAAIkG_AoFAd2pMTVVVG-p-33_q-CwsOYwY7lCsXXS1Q6nDm96_-sZFF6Bcdht09oYtUl-n6ks9_B9HyiHUoWxnHmDqWPrm9IHSTF46lWSN0DMVIPUbB8uHo1KETej4fl-GPCAAxyqKDF4860ZZ4-F401TXbqmSQi8Zd_4Et-zQ1t9EhDpw-Ks1lj4a5_Yfb7KeuzoGhTZCIP0UMhI9Wa1Y_-YC4j0pD-ZNQ", "width": 3072, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/116579609121253458406/photos\">George Germanos</a>"], "height": 2304}], "scope": "GOOGLE", "id": "4d56f16ad3d8976d49143fa4fdfffbc0a7ce8e39", "types": ["university", "point_of_interest", "establishment"], "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png"}, {"name": "University of California, Los Angeles", "reference": "CmRRAAAAd53q6NIvKlJ9TlIlMbFVgaJbQuwp3qhx8Al1tZ_Q_Vdyp1FCo1ST6VJAD_3q20k3kWbID41aGfoj54AQJAxNDopt0KP4MycCXnbz6RmXf4qQAr47yQX8iPqdOqeLqdkuEhCbKsJWikOuknKw1bMk1cW3GhSGetJb3onIRHR9HircoPmzZpnVlA", "geometry": {"location": {"lat": 34.068921, "lng": -118.4451811}, "viewport": {"northeast": {"lat": 34.06902119999999, "lng": -118.4449249}, "southwest": {"lat": 34.0688876, "lng": -118.4452665}}}, "place_id": "ChIJi2-gEH67woARErSL-8SY8zY", "vicinity": "Los Angeles", "scope": "GOOGLE", "id": "34aa535beb4a1b85c1deccb5d4324d2ae52d256e", "types": ["university", "point_of_interest", "establishment"], "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png"}, {"name": "Amazon Locker - Covel", "reference": "CmRSAAAAEedMKzuz66K6qJ_vozFnFWLfhrAYKaY-pjj79n4ItaBogJ4pT3yKOE5C_2ARb-NJQx2LXzLCIZ1AXTazAkwGiI9MEe5fFUa7JOmDX9-NsnKWENjodeqXgj4Tl28j2zfMEhAW8Xm2hqpVrV0yMJ89Jb6OGhQLgJZGcmZ_4c5tyS77SqnyjYt7Bw", "geometry": {"location": {"lat": 34.068921, "lng": -118.4451811}}, "opening_hours": {"weekday_text": [], "open_now": true}, "place_id": "ChIJ5Yvbq4i8woAR_hzXVkDyk74", "vicinity": "200 De Neve Dr, at UCLA Covel Commons, Los Angeles", "scope": "GOOGLE", "id": "a392fa0dad510c05b5d5a82616b17a59ca91ff45", "types": ["point_of_interest", "establishment"], "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png"}, {"name": "Westwood", "reference": "CmRbAAAAKEj2nuE-YzOAXCSwrATXuwRIbccOQ7J4UmUDElSiSS8LFtJyUNP0dkZWncCMu4Tr6eWuRJfH14-xNLL9ieKvuFaMwuOlxVa29rpmy77vTIDHPOmPre_ViEV-kyHZM35cEhATryVSkXT7PK8V4fCJhNmQGhT63NELWQf0zdpfPa1jWEgi6gC_cg", "geometry": {"location": {"lat": 34.0635016, "lng": -118.4455164}, "viewport": {"northeast": {"lat": 34.0827807, "lng": -118.4141518}, "southwest": {"lat": 34.0470589, "lng": -118.4665319}}}, "place_id": "ChIJecf92oa8woARVlNT9X_x42M", "vicinity": "Los Angeles", "photos": [{"photo_reference": "CoQBdwAAAPho1g9ljV3H1cmOAfdOW5Nm-qoYb1EIplFo5dMB0rPseF0DtG6aOTYK7QZFc3HweA3njGx_VdtzxCGm4c_CDRkK39HlT8citjfOQeE_qQA5pz1yXC6AFLQXd6iZBO4IyqsgMeAd4mZv0cUYFJvRs-wb_zM0I7aM89MV-bfxl9d8EhC0Z95b8K6byuwckHodmXy7GhQbvIYVvHvuKyZtQie5FI9OuP2RcQ", "width": 4032, "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/112416170407648723941/photos\">Yingju Ma</a>"], "height": 3024}], "scope": "GOOGLE", "id": "87ef87c6cb98059f72b40a917e6e9c8c80e5d8b3", "types": ["neighborhood", "political"], "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png"}]}
+
+
+connection closed

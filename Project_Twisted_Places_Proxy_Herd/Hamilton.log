@@ -1,0 +1,30 @@
+connection made
+received: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+update/add client info
+connect with neighbor: Holiday
+propagate: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+connection made
+received: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+do not update client info
+connection closed
+connection made
+received: IAMAT kiwi.cs.ucla.edu +38.0-110.0 1479413890.392014450
+add client info
+connect with neighbor: Holiday
+propagate: AT Hamilton +1228059.91387 kiwi.cs.ucla.edu +38.0-110.0 1479413890.392014450
+response to client: AT Hamilton +1228059.91387 kiwi.cs.ucla.edu +38.0-110.0 1479413890.392014450
+connection closed
+connection made
+received: WHATSAT kiwi.cs.ucla.edu 10 5
+querying Places API: https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=+38.0,-110.0&radius=10&key=AIzaSyAPcvoE1SSFXtdxtHT1SsT7samqq6TCmWE
+returned json: {
+   "html_attributions" : [],
+   "results" : [],
+   "status" : "ZERO_RESULTS"
+}
+
+response to client: AT Hamilton +1228059.91387 kiwi.cs.ucla.edu +38.0-110.0 1479413890.392014450
+{"status": "ZERO_RESULTS", "html_attributions": [], "results": []}
+
+
+connection closed

@@ -1,0 +1,12 @@
+connection made
+received: IAMAT kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+add client info
+connect with neighbor: Hamilton
+propagate: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+connect with neighbor: Welsh
+propagate: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+response to client: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+connection made
+received: AT Alford +1228054.8867 kiwi.cs.ucla.edu +34.068930-118.445127 1479413884.392014450
+do not update client info
+connection closed
